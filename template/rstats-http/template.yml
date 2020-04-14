@@ -1,5 +1,9 @@
-language: rstats-http
+language: axcel-rstats-http
 fprocess: Rscript index.R
+build_options:
+  - name: dev
+    packages:
+      - libxml2-dev
 welcome_message: |
   You have created a new function which uses R and the OpenFaaS 
   of-watchdog.

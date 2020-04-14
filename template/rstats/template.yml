@@ -1,5 +1,9 @@
-language: rstats
+language: axcel-rstats
 fprocess: Rscript index.R
+build_options:
+  - name: dev
+    packages:
+      - libxml2-dev
 welcome_message: |
   You have created a new function which uses R and the Classic
   OpenFaaS template.
