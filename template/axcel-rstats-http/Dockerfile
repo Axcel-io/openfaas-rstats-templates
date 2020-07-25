@@ -6,7 +6,7 @@ FROM rocker/r-base:latest
 ARG ADDITIONAL_PACKAGE
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libxml2-dev
+    libxml2-dev pandoc
     
 RUN apt-get update && apt-get install -y \
     --no-install-recommends ${ADDITIONAL_PACKAGE} \
