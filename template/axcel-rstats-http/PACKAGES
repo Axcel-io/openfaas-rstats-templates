@@ -1,1 +1,8 @@
 plumber
+jsonlite
+data.table
+aws.s3
+uuid
+magrittr
+plotly
+
