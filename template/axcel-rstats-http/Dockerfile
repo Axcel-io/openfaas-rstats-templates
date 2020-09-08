@@ -1,12 +1,12 @@
 FROM openfaas/of-watchdog:0.7.6 as watchdog
 
-FROM rocker/r-base:3.6.3
+FROM rocker/r-base:latest
 
 # Allows you to add additional system dependencies
 ARG ADDITIONAL_PACKAGE
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libxml2-dev pandoc
+    libxml2-dev pandoc r-cran-car
     
 RUN apt-get update && apt-get install -y \
     --no-install-recommends ${ADDITIONAL_PACKAGE} \
