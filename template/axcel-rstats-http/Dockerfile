@@ -1,6 +1,6 @@
 FROM openfaas/of-watchdog:0.7.6 as watchdog
 
-FROM rocker/r-base:latest
+FROM rocker/r-base:3.6.3
 
 # Allows you to add additional system dependencies
 ARG ADDITIONAL_PACKAGE
